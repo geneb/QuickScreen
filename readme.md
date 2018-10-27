@@ -21,13 +21,14 @@ it's available.
 
 The original distribution disk files are available here:
 
-http://annex.retroarchive.org/crescent/QSCREEN.ZIP
+http://annex.retroarchive.org/crescent/Gqscdisk.zip
 
 
 Gene Buckle, October 27th, 2018
 
 I've attached the text from Full Moon Software's catalog description of 
-QuickScreen below.  Graphics QuickScreen can be found in a separate repository.
+QuickScreen and Graphics QuickScreen below.  Graphics QuickScreen can be 
+found in a separate repository.
 
 -------------------------------------------------------------------------------
 ==============================================================================

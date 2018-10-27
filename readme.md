@@ -21,7 +21,7 @@ it's available.
 
 The original distribution disk files are available here:
 
-http://annex.retroarchive.org/crescent/Gqscdisk.zip
+http://annex.retroarchive.org/crescent/QSCREEN.ZIP
 
 
 Gene Buckle, October 27th, 2018

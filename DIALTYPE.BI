@@ -1,0 +1,10 @@
+TYPE Dialog
+    DRow AS INTEGER
+    DCol AS INTEGER
+    DLen AS INTEGER
+    DTyp AS INTEGER
+END TYPE
+
+CONST HiLite = 15
+CONST BoxClr = 112
+

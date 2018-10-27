@@ -1,0 +1,28 @@
+This file documents changes/fixes that have been made since the original
+release of Quick Screen version 4.00.
+----------------------------------------------------------------------------
+
+09-30-1991 Version 4.01:
+
+   "Settings", "Beep On Errors" menu choice can now be disabled.
+
+   Problems with file paths that included periods have been corrected.
+
+   Right arrow on a button field correctly moves to the next field the first
+   time it is pressed.
+
+   Buttons now flash whenever they are pressed (mouse or keyboard).
+
+   The file RETRIEVE.FRM was missing from disk1.  If the screen library
+   CUSTOMER.QSL was saved, the resulting form library CUSTOMER.QFL would be
+   missing the field definitions contained in RETRIEVE.FRM.  This caused the
+   DEMOCUST.BAS program to give "Subscript out of range" when the "Retrieve"
+   dialog box was invoked.
+
+11-19-98  Version 4.02
+
+   Modified DIALOG.BAS and SCRNDISP.BAS and then also recompiled QSCR.EXE
+   to fix a "Divide overflow" error when QSCR.EXE is run on very fast
+   computers.  Since your programs also use the routines in these files
+   when displaying screens using animated effects, this fixes the same
+   problem with your programs when they are run on very fast computers.

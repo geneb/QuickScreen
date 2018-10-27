@@ -1,0 +1,59 @@
+#*** QSCR. - Make Description file for QSCR.EXE *****************************
+# This file is a "MAKE Description File" which can be used with either
+# Crescent Software's CSMAKE.EXE or Microsoft's MAKE.EXE Program Maintainance
+# Utilitys to build the QSCR.EXE program.
+#
+# Syntax: >csmake qscr
+#
+# Note that the BC.EXE command switchs "/fpa" should be deleted below if you
+# do not have BASIC 6 or 7.x.  Also note that PULLDNMS.BAS as PRO.LIB are
+# not supplied with the Quick Screen package and are required!
+#****************************************************************************
+#
+QSCR.OBJ:  QSCR.BAS FieldInf.Bi DialType.Bi GenInfo.BI FormEdit.bi DefCnf.bi SetCnf.bi FldTpsQS.Bi
+   BC QSCR.BAS /s/o/fpa;
+
+QSCRMISC.OBJ:  QSCRMISC.BAS FieldInf.Bi DialType.Bi GenInfo.BI
+   BC QSCRMISC.BAS /s/o/fpa;
+
+QSCRSAVE.OBJ:  QSCRSAVE.BAS FieldInf.Bi DialType.Bi GenInfo.BI
+   BC QSCRSAVE.BAS /s/o/fpa;
+
+DIALOG.OBJ:  DIALOG.BAS DialType.BI
+   BC DIALOG.BAS /s/o/fpa;
+
+PULLDNMS.OBJ:  PULLDNMS.BAS
+   BC PULLDNMS.BAS /s/o/fpa;
+
+SCRNDISP.OBJ:  SCRNDISP.BAS
+   BC SCRNDISP.BAS /s/o/fpa;
+
+SCRNFILE.OBJ:  SCRNFILE.BAS
+   BC SCRNFILE.BAS /s/o/fpa;
+
+SCRNLIB.OBJ:  SCRNLIB.BAS
+   BC SCRNLIB.BAS /s/o/fpa;
+
+GETFILE.OBJ:  GETFILE.BAS DialType.Bi
+   BC GETFILE.BAS /s/o/fpa;
+
+FORMEDIT.OBJ:  FORMEDIT.BAS DefCnf.bi FieldInf.bi FormEdit.bi QEditype.bi
+   BC FORMEDIT.BAS /s/o/fpa;
+
+QSCALC.OBJ:  QSCALC.BAS FieldInf.bi
+   BC QSCALC.BAS /s/o/fpa;
+
+EVALUATE.OBJ:  EVALUATE.BAS
+   BC EVALUATE.BAS /s/o/fpa;
+
+VERTMENU.OBJ:  VERTMENU.BAS DefCnf.BI
+   BC VERTMENU.BAS /s/o/fpa;
+
+QEDITS.OBJ:  QEDITS.BAS QEditype.BI
+   BC QEDITS.BAS /s/o/fpa;
+
+QSCR.EXE:  QSCR.OBJ QSCRMISC.OBJ QSCRSAVE.OBJ DIALOG.OBJ PULLDNMS.OBJ\
+           SCRNDISP.OBJ SCRNFILE.OBJ SCRNLIB.OBJ GETFILE.OBJ FORMEDIT.OBJ\
+           QSCALC.OBJ EVALUATE.OBJ VERTMENU.OBJ QEDITS.OBJ PRO.LIB
+   LINK @qscr.RSP
+   DIR QSCR.EXE

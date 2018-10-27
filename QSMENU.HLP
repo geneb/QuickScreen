@@ -1,0 +1,104 @@
+QuickSCREEN Menu Help File FILE MENU
+Clears the current screen and displays a new blank screen for editing.
+Displays a list of screen files from disk that can be loaded for editing.
+Saves the current screen and field definitions to [.SCR] and [.FRM] files.
+
+Loads any text file and pastes its contents at the current cursor location.
+Saves the current screen to disk as a text file with no color.
+
+Loads and displays a screen that had been previously saved as an object file.
+Saves the current screen as an object module.  Also saves field definitions.
+
+Temporarily suspends QuickSCREEN and invokes a DOS shell.
+Exits QuickSCREEN and returns to DOS.
+
+
+
+
+LIBRARY MENU
+Displays an individual screen from the currently loaded screen library.
+
+Clears the current screen library and creates a new empty one.
+Displays a list of screen libraries from disk that can be loaded into memory.
+Saves the currently loaded screen library to disk as a compressed binary file.
+
+Adds a new screen to the current screen library.  Also saves field definitions.
+Replaces a screen in the current screen library.  Also saves field definitions.
+
+
+
+
+
+
+
+
+EDIT MENU
+Paints a selected block using the current color, or paints as the cursor moves.
+Searches for and replaces color attributes in an area of the screen.
+
+Draws a box in a selected area of the screen, or draws as the cursor moves.
+Draws lines as the cursor moves.  Intersections are handled automatically.
+Fills an area of the screen with a character, or fills as the cursor moves.
+
+Deletes the selected area of the screen and copies it to the paste buffer.
+Copies the selected area of the screen to the paste buffer.
+Copies the paste buffers contents to the current cursor location on screen.
+Allows the selected area of the screen to be moved with the cursor.
+Deletes the selected area of the screen without copying it to the paste buffer.
+
+Centers the current line or a selected area of the screen.
+
+Repeats the last valid editing key.
+DISPLAY MENU
+Displays an ASCII chart from which any character can be pasted to the screen.
+Toggles display of the ruler line on or off.  Also resets `Offset:' to 0, 0.
+
+Displays the screen in monochrome colors as it would appear using `DisplayScrn'.
+Displays the screen as it would appear on a monochrome adapter/display system.
+Displays the screen as it would appear on a CGA/monochrome display system.
+
+
+
+
+
+
+
+
+
+
+SETTING MENU
+Displays a color chart for selection of the current painting color.
+Toggles the blinking attribute on or off for the current painting color.
+Causes all new text or lines to be drawn using the current color.
+
+Displays a menu of line types to use for drawing lines or boxes.
+
+Forces the screen into the 25 line screen mode.
+Forces the screen into the 43 line screen mode.  EGA and VGA only.
+Forces the screen into the 50 line screen mode.  VGA only
+
+Turns sound on or off.
+
+
+
+
+
+COMPOSE-FIELDS MENU
+Allows data entry fields to be defined on the current screen.
+When checked, causes fields to be painted on the screen as they are defined.
+
+Allows the order (sequence) of fields to be changed.
+Prints a table of field definitions for the current screen.
+
+Allows testing data entry in the current form.  Press [Esc] when done testing.
+
+
+
+
+
+
+
+
+
+
+Displays general help screens.

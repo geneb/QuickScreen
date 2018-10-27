@@ -1,0 +1,35 @@
+TYPE GenInfo
+   Rows AS INTEGER
+   Lines AS INTEGER
+   DispType AS INTEGER
+   FromLib AS INTEGER
+
+   Clr AS INTEGER
+   SysColor AS INTEGER
+   PaintFields AS INTEGER
+   CrncStr AS STRING * 8
+
+   ScrChanged AS INTEGER
+   FrmChanged AS INTEGER
+   LibChanged AS INTEGER
+
+   CurRow AS INTEGER
+   CurCol AS INTEGER
+
+   Ins AS INTEGER
+
+   MarkBlock AS INTEGER
+   BUlRow AS INTEGER
+   BUlCol AS INTEGER
+   BBrRow AS INTEGER
+   BBrCol AS INTEGER
+   WasMarked AS INTEGER
+
+   EdType AS INTEGER
+   Ruler AS INTEGER
+   BeepOn AS INTEGER
+
+   SaveTYPE AS INTEGER
+   SaveDATA AS INTEGER
+END TYPE
+
